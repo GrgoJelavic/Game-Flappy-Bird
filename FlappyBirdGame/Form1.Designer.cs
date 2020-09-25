@@ -66,7 +66,7 @@
             this.pipeTop.Image = global::FlappyBirdGame.Properties.Resources.pipedown;
             this.pipeTop.Location = new System.Drawing.Point(958, 0);
             this.pipeTop.Name = "pipeTop";
-            this.pipeTop.Size = new System.Drawing.Size(90, 332);
+            this.pipeTop.Size = new System.Drawing.Size(90, 292);
             this.pipeTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pipeTop.TabIndex = 2;
             this.pipeTop.TabStop = false;
@@ -74,9 +74,9 @@
             // pipeBottom
             // 
             this.pipeBottom.Image = global::FlappyBirdGame.Properties.Resources.pipe;
-            this.pipeBottom.Location = new System.Drawing.Point(553, 598);
+            this.pipeBottom.Location = new System.Drawing.Point(553, 636);
             this.pipeBottom.Name = "pipeBottom";
-            this.pipeBottom.Size = new System.Drawing.Size(88, 312);
+            this.pipeBottom.Size = new System.Drawing.Size(88, 274);
             this.pipeBottom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pipeBottom.TabIndex = 3;
             this.pipeBottom.TabStop = false;

@@ -12,7 +12,7 @@ namespace FlappyBirdGame
 {
     public partial class FlappyBIrdGame : Form
     {
-        int pipeSpeed = 8;
+        int pipeSpeed = 7;
         int gravity = 5;
         int score = 0;
 
@@ -46,39 +46,33 @@ namespace FlappyBirdGame
                     EndGame();
 
             if (score > 5)
-                pipeSpeed = 12;
+                pipeSpeed = 10;
             if (score > 10)
-                pipeSpeed = 16;
+                pipeSpeed = 15;
             if (score > 15)
                 pipeSpeed = 20;
             if (score > 20)
-                pipeSpeed = 25; 
+                pipeSpeed = 25;
+            if (score > 25)
+                pipeSpeed = 30;
         }
 
         private void GameKeyIsDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Up )
+            if(e.KeyCode == Keys.Up)
                 gravity = -7;
-            if (score > 10)
-                gravity = -6;
-            if (score > 15)
-                gravity = -5;
         }
 
         private void GameKeyIsUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Down)
                 gravity = 7;
-            if (score > 10)
-                gravity = 6;
-            if (score > 15)
-                gravity = 5;
         }
 
         private void EndGame()
         {
             gameTimer.Stop();
-            scoreText.Text += " -  GAME OVER!";
+            scoreText.Text += "  -  GAME OVER!";
 
         }
     }
